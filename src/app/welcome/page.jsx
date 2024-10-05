@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
-import DeleteBtn from "./deleteBtn";
+import DeleteBtn from "@/app/welcome/DeleteBtn"
 
 function Welcomepage() {
   const { data: session } = useSession();

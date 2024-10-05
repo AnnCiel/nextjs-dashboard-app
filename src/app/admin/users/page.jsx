@@ -7,7 +7,7 @@ import Container from "../components/Container";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
-import DeleteBtn from "./Deletebtn";
+import DeleteBtn from "../users/DeleteBtn";
 
 function AdminUserManagePage() {
   const { data : session} = useSession();
