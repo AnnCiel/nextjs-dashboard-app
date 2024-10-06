@@ -20,7 +20,7 @@ function Navbar(session) {
               ></Image>
             </Link>
           </div>
-          <ul className="flex">
+          <ul className="flex space-x-4">
             {!session ? (
               <>
                 <li className="mx-3">
@@ -32,6 +32,7 @@ function Navbar(session) {
               </>
             ) : (
               <li className="mx-3">
+                <div className="flex space-x-3">
                 <Link
                   href="/welcome"
                   className="bg-gray-500 text-white py-2 px-3 rounded-md text-lg my-2"
@@ -42,6 +43,7 @@ function Navbar(session) {
                 >
                   Logout
                 </a>
+                </div>
               </li>
             )}
           </ul>

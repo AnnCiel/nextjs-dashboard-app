@@ -19,7 +19,7 @@ function AdminNav( { session }) {
               ></Image>
             </Link>
           </div>
-          <ul className="flex">
+          <ul className="flex items-center">
             {!session ? (
               <>
                 <li className="bg-green-500 text-white py-2 px-4 rounded-md text-lg my-2 ">
