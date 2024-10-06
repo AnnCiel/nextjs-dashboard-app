@@ -22,10 +22,10 @@ function AdminNav( { session }) {
           <ul className="flex">
             {!session ? (
               <>
-                <li className="mx-3">
+                <li className="bg-green-500 text-white py-2 px-4 rounded-md text-lg my-2 ">
                   <Link href="/login">Login</Link>
                 </li>
-                <li className="mx-3">
+                <li className="bg-blue-500 text-white py-2 px-4 rounded-md text-lg my-2">
                   <Link href="/register">Register</Link>
                 </li>
               </>

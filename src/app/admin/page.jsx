@@ -57,8 +57,8 @@ function AdminPage() {
 
   return (
     <Container>
-      <AdminNav></AdminNav>
-      <div className="flex-grow">
+      <AdminNav session={session}></AdminNav>
+      <div className="flex-grow  bg-violet-100">
         <div className="container mx-auto">
           <div className="flex justify-between mt-10">
             <SideNav></SideNav>

@@ -46,12 +46,22 @@ function AdminPostManagePage() {
     <Container>
       <AdminNav session={session}></AdminNav>
 
-      <div className="flex-grow">
+      <div className="flex-grow  bg-violet-100">
         <div className="container mx-auto">
           <div className="flex mt-10">
             <SideNav></SideNav>
             <div className="p-10">
+            <div  className="flex justify-end">
+              <Link
+                href="/create"
+                className="bg-green-500 text-white border py-2 px-3 rounded-md text-lg my-2 text-justify"
+              >
+                Create Post
+              </Link>
+            </div>
+            
               <h3 className="text-3xl mb-3">Manage Posts</h3>
+              
               <p>A list of posts retrieved from a MongoDB database</p>
               {allPostData.length > 0 ? (
                 <div className="shadow-lg overflow-x-auto">
@@ -65,7 +75,7 @@ function AdminPostManagePage() {
                         <th className="p-5">Actions</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="bg-white">
                       {allPostData.map((val) => (
                         <tr key={val._id}>
                           <td className="p-5">{val._id}</td>

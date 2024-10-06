@@ -7,7 +7,7 @@ import { signOut } from "next-auth/react";
 
 function Navbar(session) {
   return (
-    <nav className="shadow-xl">
+    <nav className="shadow-xl ">
       <div className="container mx-auto">
         <div className="flex justify-between items-center p-4">
           <div>

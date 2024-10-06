@@ -47,9 +47,9 @@ function LoginPage() {
   return (
     <Container>
       <Navbar></Navbar>
-      <div className="flex-grow">
+      <div className="flex-grow  bg-violet-100">
         <div className="flex justify-center items-center">
-          <div className="w-[400px] shadow-xl p-10 mt-5 rounded-xl">
+          <div className="w-[400px] shadow-xl p-10 mt-5 rounded-xl bg-white">
             <h3 className="text-3xl">Login</h3>
             <hr className="my-3"></hr>
 

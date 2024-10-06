@@ -42,7 +42,7 @@ function AdminUserManagePage() {
     <Container>
       <AdminNav session={session}></AdminNav>
 
-      <div className="flex-grow">
+      <div className="flex-grow  bg-violet-100">
         <div className="container mx-auto">
           <div className="flex mt-10">
             <SideNav></SideNav>
@@ -60,7 +60,7 @@ function AdminUserManagePage() {
                       <th className="p-5">Actions</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="bg-white">
                     { allUserData?.map(val =>(
                       <tr key={val._id}>
                       <td className="p-5">{val._id}</td>
